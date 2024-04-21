@@ -1,47 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
+
+  <link rel="stylesheet" href="static/style.css">
 </head>
+
 <body>
 
-  Your Result
-  76
-  of 100
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+  <main>
+    <section class="result-container">
+      <h2>Your Result</h2>
 
-  Reaction
-  80 / 100
+      <div class="main-result-element cicle">
+        <span>
+          76
+          <p>
+            of 100
+          </p>
+        </span>
 
-  Memory
-  92 / 100
+      </div>
 
-  Verbal
-  61 / 100
+      <div class="result-desc-container">
+        <span>Great</span>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </section>
 
-  Visual
-  72 / 100
+    <section class="sumary-container">
+      <div class="sumary-element">
+        <span class="reaction-text">Reaction</span>
+        <p>80 / 100</p>
+      </div>
+      <div class="sumary-element">
+        <span class="memory-text">Memory</span>
+        <p>92 / 100</p>
+      </div>
+      <div class="sumary-element">
+        <span class="verbal-text">Verbal</span>
+        <p>61 / 100</p>
+      </div>
+      <div class="sumary-element">
+        <span class="visual-text">Visual</span>
+        <p> 72 / 100</p>
+      </div>
+      <button class="btn-continue">Continue</button>
+    </section>
 
-  Continue
-  
+  </main>
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Pablo321123">Pablo Vasconcelos</a>.
   </div>
+
 </body>
+
 </html>

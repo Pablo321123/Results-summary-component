@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Hanken Grotesk", sans-serif;
+    ;
+}
+
+/* GRADIENTS */
+
+/* BACKGROUND */
+
+/* --light-slate-blue: 252, 100%, 67%;
+--clr-royal-blue: 241 81% 54%; */
+
+p {
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 45% 55%;    
+    justify-content: center;
+    border-radius: 1.78em;
+    box-shadow: 0.5em 1em 3em hsla(224 30% 27% / 0.2);
+    overflow: hidden;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 1.78em;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.result-container h2 {
+    color: hsl(241, 100%, 89%);
+    font-weight: 400;
+    font-family: "Hanken Grotesk", sans-serif;
+    /*font-size: larger;*/
+}
+
+.main-result-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;    
+    border-radius: 50%;
+    padding: 10%;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.main-result-element span {
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.main-result-element p {
+    color: hsl(252, 100%, 74%);
+    font-weight: bold;
+}
+
+.result-desc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.result-desc-container span {
+    color: hsl(221, 100%, 96%);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.result-desc-container p {
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+}
