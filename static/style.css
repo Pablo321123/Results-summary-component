@@ -36,7 +36,7 @@ main {
     border-radius: 1.78em;
     box-shadow: 0.5em 1em 3em hsla(224 30% 27% / 0.2);
     overflow: hidden;
-    max-width: 570px;
+    max-width: 700px;
 }
 
 .result-container {
@@ -63,8 +63,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     padding: 10%;
     background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
@@ -73,7 +73,8 @@ main {
 .main-result-element span {
     color: hsl(0, 0%, 100%);
     font-weight: bold;
-    font-size: 50px;
+    font-size: 80px;
+    text-align: center;
 }
 
 .main-result-element p {
@@ -92,7 +93,7 @@ main {
 .result-desc-container span {
     color: hsl(221, 100%, 96%);
     font-weight: bold;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .result-desc-container p {
@@ -108,7 +109,7 @@ main {
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .sumary-container .sumary-title {
@@ -117,7 +118,7 @@ main {
     width: 100%;
     color: hsl(224, 30%, 27%);
     padding-bottom: 0.8rem;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .sumary-element {
@@ -138,11 +139,11 @@ main {
 }
 
 .sumary-container p {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .sumary-container span {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .sumary-element .reaction-text {
@@ -191,7 +192,7 @@ main {
 }
 
 .sumary-container .sumary-btn {
-    padding-top: 1rem;
+    padding: 1.5rem 0 1rem 0;
     width: 100%;
 }
 
@@ -210,8 +211,8 @@ main {
     background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
-@media (max-width: 570px) {
-    body{
+@media (max-width: 635px) {
+    body {
         overflow: hidden;
         padding: 0;
     }
@@ -220,10 +221,51 @@ main {
         display: flex;
         flex-direction: column;
         border-radius: 0 0 0 0;
-        box-shadow: 0.5em 1em 3em hsla(224 30% 27% / 0.2);
+        box-shadow: none;
         overflow: hidden;
-        width: 100%;        
+        width: 100%;
     }
+
+    .sumary-container p {
+        font-size: 14px;
+    }
+
+    .sumary-container span {
+        font-size: 14px;
+    }
+
+    .sumary-container .sumary-title {
+        font-size: 13px;
+    }
+
+    .main-result-element {
+        width: 150px;
+        height: 150px;
+        padding: 10%;
+    }
+
+    .main-result-element span {
+        font-size: 50px;
+    }
+
+    .main-result-element p {
+        color: hsl(252, 100%, 74%);
+        font-weight: bold;
+    }
+
+    .result-desc-container span {
+        font-size: 25px;
+    }
+
+    .result-desc-container p {
+        font-size: 15px;
+    }
+
+    .result-container h2 {
+        font-size: 20px;
+        /*font-size: larger;*/
+    }
+
 
     .result-container {
         border-radius: 0 0 1.78em 1.78em;
